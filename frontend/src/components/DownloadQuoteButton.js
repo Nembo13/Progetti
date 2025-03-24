@@ -13,7 +13,7 @@ const DownloadQuoteButton = ({ quoteId, token }) => {
   const handleDownload = async () => {
     try {
       // Richiesta GET all'endpoint per generare il PDF.
-      const response = await axios.get(`http://localhost:5000/api/pdf/quote/${quoteId}`, {
+      const response = await axios.get(`http://localhost:5001/api/pdf/quote/${quoteId}`, {
         responseType: 'blob', // Trattiamo la risposta come file binario
         headers: { Authorization: `Bearer ${token}` },
       });

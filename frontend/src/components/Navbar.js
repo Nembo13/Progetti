@@ -50,7 +50,7 @@ function Navbar() {
             <Link to="/catalog">Catalogo</Link>
           </li>
           <li>
-            <Link to="/about">Chi Siamo</Link>
+            <Link to="/about">Contatti</Link>
           </li>
         </ul>
         <ul className="navbar-auth">
@@ -101,7 +101,7 @@ function Navbar() {
           </li>
           <li>
             <Link to="/about" onClick={() => setMobileMenu(false)}>
-              Chi Siamo
+              Contatti
             </Link>
           </li>
           {!token ? (

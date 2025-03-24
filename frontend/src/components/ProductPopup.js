@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import api from '../services/api';
 import DownloadQuoteButton from './DownloadQuoteButton';
 import './ProductPopup.css';
+import { Link } from 'react-router-dom';
 
 /**
  * Popup modal per configurare e generare un preventivo.
@@ -40,7 +41,7 @@ function ProductPopup({ product, closePopup }) {
     <div className="popup-overlay">
       <div className="popup">
         <button className="close-button" onClick={closePopup}>X</button>
-        <h2>Genera Preventivo per {product.name}</h2>
+        <h2>Preventivo creato per {product.name}</h2>
         {!quote ? (
           <form onSubmit={handleSubmit} className="popup-form">
             <label>
@@ -75,7 +76,8 @@ function ProductPopup({ product, closePopup }) {
           </form>
         ) : (
           <div className="quote-result">
-            <p>Preventivo creato con successo!</p>
+            <p>Scrivici nella sezione <Link to="/about">Contatti</Link></p>
+            <p>Ti ricontatteremo per personalizzare i tuoi zaini</p>
             <p>Prezzo finale: €{quote.finalPrice.toFixed(2)}</p>
             <DownloadQuoteButton quoteId={quote._id} token={localStorage.getItem('token')} />
           </div>

@@ -47,7 +47,7 @@ app.use('/api/pdf', pdfRoutes);
 
 
 // Imposta la porta. Se non specificata nell'ambiente, usa 5000.
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // Avvia il server in ascolto sulla porta definita
 app.listen(PORT, () => {

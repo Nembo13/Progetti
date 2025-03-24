@@ -6,7 +6,7 @@
   
   .hero {
     /* Usa un'immagine di sfondo che evidenzi l’identità dell’azienda */
-    background-image: url('/home/alessandro/Documenti/Web Advanced/LymeCo/frontend/public/hero-image.png'); 
+    background-image: url('/Users/lucianomaso/Progetti/frontend/public/hero-image.png'); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

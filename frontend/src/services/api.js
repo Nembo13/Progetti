@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Crea un’istanza di Axios; qui impostiamo la baseURL che punta al nostro backend.
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Aggiorna se usi un URL diverso.
+  baseURL: 'http://localhost:5001/api', // Aggiorna se usi un URL diverso.
 });
 
 // Aggiunge un interceptor per includere il token in ogni richiesta se presente in localStorage.

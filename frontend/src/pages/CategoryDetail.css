@@ -1,0 +1,96 @@
+/* Contenitore generale della pagina CategoryDetail */
+.category-detail {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .category-detail h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  
+  /* Lista dei prodotti in formato "riga" */
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Ogni prodotto viene disposto in una riga con due colonne */
+  .product-row {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #07a5c3;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Colonna sinistra per l'immagine */
+  .product-image {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Colonna destra per la descrizione e dettagli */
+  .product-details {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Stili per i testi */
+  .product-details h3 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  .product-details p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  /* Pulsante "Crea preventivo" */
+  .product-details button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #FDE910;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+  }
+  
+  .product-details button:hover {
+    background-color: #f6d700;
+  }
+  
+  /* Responsive: su dispositivi piccoli, impila le colonne verticalmente */
+  @media (max-width: 768px) {
+    .product-row {
+      flex-direction: column;
+    }
+    
+    .product-image, .product-details {
+      width: 100%;
+    }
+    
+    .product-details {
+      padding: 10px;
+    }
+  }

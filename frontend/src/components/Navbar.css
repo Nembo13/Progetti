@@ -1,0 +1,184 @@
+/* Stili base del Navbar (Desktop) */
+.mobile-menu {
+    display: none;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+    padding: 10px 20px;
+    height: 60px;
+    color: #fff;
+    position: relative;
+  }
+  
+  .navbar-logo .logo {
+    height: 180px; /* Il logo occupa l'80% dell'altezza del Navbar */
+  }
+  
+  /* Desktop-menu: visualizza due liste (navbar-links e navbar-auth) */
+  .desktop-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .navbar-auth {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .navbar-links li,
+  .navbar-auth li {
+    margin: 0 10px;
+  }
+  
+  .navbar-links li a,
+  .navbar-auth li a {
+    color: #07a5c3;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links li a:hover,
+  .navbar-auth li a:hover {
+    color: #FDE910;
+  }
+  
+  /* Dropdown per l'avatar (desktop) */
+  .navbar-user {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #222222;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    min-width: 150px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-menu button {
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #07a5c3;
+  }
+  
+  .dropdown-menu button:hover {
+    background-color: #FDE910;
+    color: #000;
+  }
+  
+  /* Icona hamburger: nascosta in desktop */
+  .mobile-menu-icon {
+    display: none;
+    color: #07a5c3;
+    cursor: pointer;
+  }
+  
+  /* --- Versione Mobile --- */
+  
+  /* Nascondi il menu desktop in mobile */
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none;
+    }
+    
+    .mobile-menu-icon {
+      display: block;
+    }
+    
+    /* Menu mobile unificato */
+    .mobile-menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;  /* Aperto dal lato destro */
+      width: 40%;
+      background-color: #222222;
+      padding: 5px 0;
+      border-radius: 0 0 4px 4px;
+    }
+    
+    /* Quando attivo, mostra il menu mobile */
+    .mobile-menu.active {
+      display: block;
+    }
+    
+    .mobile-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .mobile-menu ul li {
+      margin: 5px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .mobile-menu ul li a {
+      color: #07a5c3;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .mobile-menu ul li a:hover {
+      color: #FDE910;
+    }
+    
+    /* Dropdown per l'avatar (mobile) */
+    .navbar-user-mobile {
+      position: relative;
+    }
+    
+    .dropdown-menu-mobile {
+      position: absolute;
+      top: 40px;
+      right: 0;
+      background-color: #222222;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 10px;
+      min-width: 150px;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .dropdown-menu-mobile button {
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 14px;
+      color: #07a5c3;
+    }
+    
+    .dropdown-menu-mobile button:hover {
+      background-color: #FDE910;
+      color: #000;
+    }
+  }

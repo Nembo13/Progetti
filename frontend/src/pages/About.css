@@ -1,0 +1,101 @@
+/* Stili esistenti per la pagina About */
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .contact-form-section {
+    margin-top: 40px;
+  }
+  
+  .contact-form-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #FDE910;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #f6d700;
+  }
+  
+  .response-message {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Nuova sezione: informazioni sull'azienda */
+  .company-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  
+  .company-info > div {
+    flex: 1;
+  }
+  
+  .company-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .company-info p,
+  .company-info ul {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .company-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .company-info ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Responsive: su dispositivi piccoli, impila le colonne verticalmente */
+  @media (max-width: 768px) {
+    .company-info {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

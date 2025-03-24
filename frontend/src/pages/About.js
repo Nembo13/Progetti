@@ -98,7 +98,8 @@ function About() {
         <div className="location">
           <h2>Dove siamo</h2>
           <p>
-            Siamo situati nel cuore di Milano, in Via Garibaldi 123, a due passi dal centro.
+            Siamo situati nell'area industriale di Tivoli, in Via Lago d'Albano 20, a pochi km dall'uscita
+            dell'autostrada a 24 - uscita Tivoli
           </p>
           {/* Qui potresti inserire una mappa integrata o ulteriori dettagli */}
         </div>

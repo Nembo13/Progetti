@@ -19,6 +19,8 @@
     justify-content: center;
     width: 100%;
     height: 55vh;
+    margin-left: auto;
+    margin-right: auto ;
   }
   
   .hero h1 {

@@ -11,7 +11,7 @@ exports.getAllProducts = async (req, res) => {
     const category = req.query.category;
     let products;
     
-    // Se viene specificata una categoria, filtra i prodotti
+    // Se la categoria esiste, filtro prodotti
     if (category) {
       products = await Product.find({ category: category });
     } else {

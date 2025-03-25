@@ -6,7 +6,7 @@
   
   .hero {
     /* Usa un'immagine di sfondo che evidenzi l’identità dell’azienda */
-    background-image: url('/Users/lucianomaso/Progetti/frontend/public/hero-image.png'); 
+    background-image: url('C:\Users\Alessandro Maso\Documents\Web Advanced\Progetti\frontend\public\hero-image.png'); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,4 +32,18 @@
   .hero p {
     font-size: 30px;
     -webkit-text-stroke: 1px black;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 50px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 36px;
+    }
+  
+    .hero p {
+      font-size: 24px;
+    }
   }

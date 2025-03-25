@@ -5,6 +5,9 @@ const cors = require('cors');
 // Inizializza l'app Express
 const app = express();
 
+const https = require('https'); // Importa il modulo https
+const fs = require('fs');       // Importa il modulo fs per leggere i file
+
 // Middleware: abilita CORS e converte i body delle richieste in JSON
 app.use(cors());
 app.use(express.json());
@@ -46,7 +49,8 @@ const pdfRoutes = require('./routes/pdfRoutes');
 app.use('/api/pdf', pdfRoutes);
 
 
-// Imposta la porta. Se non specificata nell'ambiente, usa 5000.
+
+// Impostazione porta  
 const PORT = process.env.PORT || 5001;
 
 // Avvia il server in ascolto sulla porta definita

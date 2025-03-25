@@ -182,3 +182,6 @@
       color: #000;
     }
   }
+  .navbar-logo .logo {
+    height: 120px; /* Il logo occupa l'80% dell'altezza del Navbar */
+  }
